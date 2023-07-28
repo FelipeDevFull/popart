@@ -1,0 +1,118 @@
+.section_contact
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background-image: var(--image_mobile);
+  background-color: #cccccc; 
+  background-position: center; 
+  /* background-repeat: no-repeat; 
+  background-size: cover;  */
+  background-size: 150%; 
+}
+.shape_contact
+{
+  width: 300px;
+  background-image:  var(--image_shape_text);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 50px auto;
+  animation: mymove_contact 0.5s;
+}
+.shape_contact:nth-child(1)
+{
+  margin-top: 150px; 
+}
+.shape_contact:nth-child(3)
+{
+  overflow: auto;
+}
+@keyframes mymove_contact {
+  0%   { width: 0px;}
+  100% {width: 300px;}
+}  
+.section_contact h2
+{
+  font-size: 2.7em;
+  padding: 10px;
+  text-align: center;
+}
+.shape_contact ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  padding: 10px;
+  width: 260px;
+  margin: auto;
+} 
+.shape_contact ul i{
+  color: #000;
+} 
+.section_contact p
+{
+  font-size: 1em;
+  text-align: center;
+  padding: 15px;
+  animation: move_text 200ms 100ms ease-in-out backwards;
+}
+@keyframes move_text
+{
+  0%{
+    scale: .7;
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width:400px){
+  .shape_contact
+  {
+    width: 390px;
+  }
+  .section_contact p
+  {
+    font-size: 15px;
+  }
+} 
+
+@media only screen and (min-width:650px){
+  
+  .shape_contact
+  {
+    width: 600px;
+    animation: mymove_contact 0.5s;
+  }
+  .shape_contact:nth-child(3)
+  {
+    overflow: hidden;
+  }
+  @keyframes mymove_contact {
+    0%   { width: 0px;}
+    100% {width: 600px;}
+  }
+  .section_contact h2
+  {
+    font-size: 4.7em;
+  }
+  .shape_contact ul{
+    font-size: 2.7em;
+  } 
+  .section_contact p
+  {
+    font-size: 1.2em;
+  }
+  
+}
+
+@media only screen and (min-width:800px){
+  
+  .section_contact
+  {
+    background-image: var(--image_desktop);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+
+}

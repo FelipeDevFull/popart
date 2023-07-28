@@ -1,0 +1,106 @@
+.section_home
+{
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 95px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -2;
+  background-image: url("/background_home_1.jpg");
+  background-color: #cccccc; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  animation-iteration-count: infinite;
+  animation-name: animation_background_home;
+  animation-duration: 8s;
+  animation-timing-function: steps(1, end);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: animation_background_home;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-timing-function: steps(1, end);
+}
+@keyframes animation_background_home {
+  30%   {background-image: url("/background_home_3.jpg");}
+  60%  {background-image: url("/background_home_2.jpg");}
+  90% {background-image: url("/background_home_1.jpg");}  
+}
+.container_face_title
+{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section_home_face_man
+{
+  width: 310px;
+  position: relative;
+  margin: 42px auto;
+}
+.section_home_face_man img
+{
+  position: relative !important;
+  width: 100%; 
+} 
+.section_home_background_title
+{
+  width: 230px;
+  border-radius: 40px;
+  background-image: url("/background_home_3.jpg");
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 193px;
+  animation-iteration-count: infinite;
+  animation-name: animation_background_title;
+  animation-duration: 8s;
+  animation-timing-function: steps(1, end);
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: animation_background_title;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-timing-function: steps(1, end);
+}
+@keyframes animation_background_title {
+  30%   { background-image: url("/background_home_2.jpg");}
+  60%  {background-image: url("/background_home_1.jpg");}
+  90% {background-image: url("/background_home_3.jpg");}  
+}
+.section_home_background_title h1
+{
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+}
+.section_home_background_title span
+{
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  display: block;
+  margin-top: -8px;
+  padding-bottom: 4px;
+}
+
+@media only screen and (min-width:650px){
+  
+  .section_home_face_man
+  {
+    width: 410px;
+  }
+  .section_home_background_title
+  { 
+    width: 300px;
+    top: 255px;
+  }
+  .section_home_background_title h1
+  { 
+    font-size: 59px;
+  }
+
+}
+

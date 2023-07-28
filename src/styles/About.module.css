@@ -1,0 +1,73 @@
+.section_about
+{
+  width: 100%;
+  min-height: 100vh;
+  padding: 8px;
+  background-image: var(--image_mobile);
+  background-color: #cccccc; 
+  background-position: center; 
+  /* background-repeat: no-repeat; 
+  background-size: cover;  */
+  background-size: 150%;
+}
+.shape_about
+{
+  width: 300px;
+  background-image:  var(--image_shape_text);
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  animation: mymove_about 0.5s;
+}
+@keyframes mymove_about {
+  0%   { width: 0px;}
+  100% {width: 300px;}
+}
+.section_about h2
+{
+  font-size: 2.7em;
+  padding: 10px;
+}
+.section_about p
+{
+  font-size: 1em;
+  animation: move_text 200ms 100ms ease-in-out backwards;
+}
+
+@media only screen and (min-width:650px){
+
+  .section_about
+  {
+    padding: 20px;
+  }
+  .shape_about
+  {
+    width: 500px;
+     animation: mymove_about 0.5s;
+  }
+  @keyframes mymove_about {
+    0%   { width: 0px;}
+    100% {width: 500px;}
+  }
+  .section_about h2
+  {
+    font-size: 4.3em;
+  }
+  .section_about p
+  {
+    font-size: 1.3em;
+  }
+}  
+@media only screen and (min-width:800px){
+  
+  .section_about
+  {
+    background-image: var(--image_desktop);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+  }
+}  
